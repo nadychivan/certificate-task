@@ -19,7 +19,6 @@ describe('Certificate test', () => {
         cy.get('.ng-isolate-scope').selectFile("cypress/fixtures/cert.cer", { action: 'drag-drop' });
 
         //Validation if certificate is uploaded 
-        //const subjectData = 'Таксер Тест Тестерович';
         cy.get('table tbody tr').eq(0).then(($name) => {
             cy.wrap($name).find('th').should('contain', table.subject);
             cy.wrap($name).find('td').should('contain', table.name);
@@ -30,9 +29,6 @@ describe('Certificate test', () => {
             expect($div.get(0).innerText).to.eq(table.name);
         })
 
-
-
     });
-
 
 });
