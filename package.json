@@ -1,0 +1,17 @@
+{
+  "name": "cypress_task",
+  "version": "1.0.0",
+  "description": "Task to verify certificate test",
+  "main": "index.js",
+  "scripts": {
+    "cypress-test": "npx cypress run",
+    "cypress-test-headed": "npx cypress run --headed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Nadych",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.12.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
